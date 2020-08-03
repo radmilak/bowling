@@ -34,7 +34,7 @@ public class BowlingGame {
             if (frame.isStrike()) {
                 Frame nextFrame = frames.get(i+1);
                 score += Constants.NUM_OF_PINS + frames.get(i+1).getKnockedPins();
-                //if the frame was strike, it only counts as one roll, so has to add value of the next one as well
+                //if the frame was strike, it only counts as one roll, so have to add value of the next one as well
                 if (nextFrame.isStrike()) {
                     score += frames.get(i+2).getKnockedPinsInFirstRoll();
                 }
